@@ -1,0 +1,61 @@
+#1
+hashes=("abc123","ffd222","9af010","ffd222","x0x0x0")
+a_count=hashes.count("ffd222")
+print("Количество вхождений:",a_count)
+
+#2
+users=("guest","moderator","admin","root")
+a_index=users.index("admin")
+print("Индекс admin:",a_index)
+
+#3
+key_params=("AES",256,"CBC")
+algorithm,key_size,mode=key_params
+print("Algorithm:",algorithm)
+print("Key size:",key_size)
+print("Mode:",mode)
+
+#4
+log=("login","download","upload","logout")
+print(log[-1])
+
+#5
+ips=("192.168.0.1","10.0.0.2","172.16.0.3")
+my_ips=input("Введите IP:")
+if my_ips in ips:
+    print("Найдено")
+else:
+    print("Нет в списке")
+    
+#6
+name=input()
+role=input()
+status=input()
+my_tuple=(name,role,status)
+print(my_tuple)
+
+#7
+access=("read", "write", "execute")
+new_value=input()
+new_access=(access[0],new_value,access[2])
+print(new_access)
+
+#8
+attempts=("success","fail","fail","success","fail","fail")
+success_count=attempts.count("success")
+fail_count=attempts.count("fail")
+print("success:", success_count)
+print("fail:", fail_count)
+
+#9
+admins=("root","admin")
+users=("alex","bob")
+result=admins+users
+print(result)
+
+#10
+logs=("login","upload","download","logout")
+start,*middle,end=logs
+print("start:",start)
+print("middle:",middle)
+print("end:",end)
